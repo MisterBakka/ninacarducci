@@ -1,12 +1,4 @@
-body {
-	max-width: 1920px;
-	margin: auto;
-}
-* {
-	font-family: 'Inter';
-	font-style: normal;
-}
-.top-header {
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -18,24 +10,43 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
+.name {
 	font-size: 26px;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
 	color: #000
+}
+
+.referencement {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.ref-link-tel {
+	color: black;
+}
+
+body {
+	max-width: 1920px;
+	margin: auto;
+}
+* {
+	font-family: 'Inter';
+	font-style: normal;
 }
 
 .social-link img {
@@ -90,9 +101,9 @@ body {
 	font-size: 14px;
 }
 
-/* #gallery {
-	/*	min-height: 100vh; 
-} */
+#gallery {
+	/*	min-height: 100vh; */
+}
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -143,6 +154,7 @@ body {
 	margin: auto;
 	padding-block: 3em;
 }
+
 .quote__text {
 	font-family: Spectral;
 	font-style: italic;
@@ -303,10 +315,10 @@ input[type="submit"] {
 		z-index: 0;
 	}
 
-	#contact .container {
+	#contact  .container {
 		flex-direction: column;
 	}
-	#contact .picture.right {
+	#contact  .picture.right {
 		margin-top: 1em;
 	}
 	.picture.right::before {
@@ -320,15 +332,15 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	header nav, header nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	header nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
@@ -353,4 +365,3 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
